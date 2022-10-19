@@ -1,0 +1,43 @@
+ruby-rack-cache (1.2-4.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 02:07:00 +0100
+
+ruby-rack-cache (1.2-4) unstable; urgency=medium
+
+  * Team upload.
+  * Rebuild against newer gem2deb (adds gemspec for all interpreters, current
+    and future)
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 19 May 2014 12:23:35 -0300
+
+ruby-rack-cache (1.2-3) unstable; urgency=low
+
+  Team upload.
+
+  [ Cédric Boutillier ]
+  * debian/control: remove obsolete DM-Upload-Allowed flag
+  * use canonical URI in Vcs-* fields
+  * debian/copyright: use DEP5 copyright-format/1.0 official URL for Format
+    field
+
+  [ Christian Hofstaedtler ]
+  * Fix Syntax/Blocks of debian/copyright
+  * Replace versioned ruby-rack dependency with ruby-rack | ruby-rack1.4
+  * Bump Standards-Version to 3.9.5 (no changes)
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Mon, 02 Dec 2013 21:48:33 +0100
+
+ruby-rack-cache (1.2-2) unstable; urgency=low
+
+  * Bump build dependency on gem2deb to >= 0.3.0~
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 25 Jun 2012 15:51:10 -0300
+
+ruby-rack-cache (1.2-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Ondřej Surý <ondrej@debian.org>  Wed, 25 Apr 2012 10:46:18 +0000

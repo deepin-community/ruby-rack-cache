@@ -1,0 +1,151 @@
+--- !ruby/object:Gem::Specification
+name: rack-cache
+version: !ruby/object:Gem::Version
+  version: '1.2'
+  prerelease: 
+platform: ruby
+authors:
+- Ryan Tomayko
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2012-03-05 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: rack
+  requirement: &70248834703480 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0.4'
+  type: :runtime
+  prerelease: false
+  version_requirements: *70248834703480
+- !ruby/object:Gem::Dependency
+  name: bacon
+  requirement: &70248834703100 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: *70248834703100
+- !ruby/object:Gem::Dependency
+  name: memcached
+  requirement: &70248834702640 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: *70248834702640
+- !ruby/object:Gem::Dependency
+  name: dalli
+  requirement: &70248834702220 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: *70248834702220
+description: Rack::Cache is suitable as a quick drop-in component to enable HTTP caching
+  for Rack-based applications that produce freshness (Expires, Cache-Control) and/or
+  validation (Last-Modified, ETag) information.
+email: r@tomayko.com
+executables: []
+extensions: []
+extra_rdoc_files:
+- README
+- COPYING
+- TODO
+- CHANGES
+files:
+- CHANGES
+- COPYING
+- Gemfile
+- README
+- Rakefile
+- TODO
+- doc/configuration.markdown
+- doc/faq.markdown
+- doc/index.markdown
+- doc/layout.html.erb
+- doc/license.markdown
+- doc/rack-cache.css
+- doc/server.ru
+- doc/storage.markdown
+- example/sinatra/app.rb
+- example/sinatra/views/index.erb
+- lib/rack-cache.rb
+- lib/rack/cache.rb
+- lib/rack/cache/appengine.rb
+- lib/rack/cache/cachecontrol.rb
+- lib/rack/cache/context.rb
+- lib/rack/cache/entitystore.rb
+- lib/rack/cache/key.rb
+- lib/rack/cache/metastore.rb
+- lib/rack/cache/options.rb
+- lib/rack/cache/request.rb
+- lib/rack/cache/response.rb
+- lib/rack/cache/storage.rb
+- rack-cache.gemspec
+- test/cache_test.rb
+- test/cachecontrol_test.rb
+- test/context_test.rb
+- test/entitystore_test.rb
+- test/key_test.rb
+- test/metastore_test.rb
+- test/options_test.rb
+- test/pony.jpg
+- test/request_test.rb
+- test/response_test.rb
+- test/spec_setup.rb
+- test/storage_test.rb
+homepage: http://tomayko.com/src/rack-cache/
+licenses: []
+post_install_message: 
+rdoc_options:
+- --line-numbers
+- --inline-source
+- --title
+- Rack::Cache
+- --main
+- Rack::Cache
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 1.8.11
+signing_key: 
+specification_version: 2
+summary: HTTP Caching for Rack
+test_files:
+- test/cache_test.rb
+- test/cachecontrol_test.rb
+- test/context_test.rb
+- test/entitystore_test.rb
+- test/key_test.rb
+- test/metastore_test.rb
+- test/options_test.rb
+- test/request_test.rb
+- test/response_test.rb
+- test/storage_test.rb

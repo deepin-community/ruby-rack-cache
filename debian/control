@@ -1,0 +1,28 @@
+Source: ruby-rack-cache
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Ondřej Surý <ondrej@debian.org>
+Build-Depends: debhelper (>= 7.0.50~),
+	       gem2deb (>= 0.3.0~),
+	       ruby-rack | ruby-rack1.4,
+	       ruby-bacon,
+#	       ruby-memcached,
+#	       ruby-dalli
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rack-cache.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-ruby-extras/ruby-rack-cache.git;a=summary
+Homepage: http://tomayko.com/src/rack-cache/
+XS-Ruby-Versions: all
+
+Package: ruby-rack-cache
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends},
+	 ${misc:Depends},
+	 ruby | ruby-interpreter,
+	 ruby-rack (>= 0.4) | ruby-rack1.4
+Description: HTTP Caching for Rack
+ Rack::Cache is suitable as a quick drop-in component to enable HTTP
+ caching for Rack-based applications that produce freshness (Expires,
+ Cache-Control) and/or validation (Last-Modified, ETag) information.
